@@ -48,7 +48,7 @@ function checkCard(){
    let pointLS = localStorage.getItem("point");
    let INTpoint = parseInt(pointLS);
    var cardImage = document.querySelector(".membercard");
-   
+
    if(Number.isNaN(INTpoint)){
       cardImage.src = "image/white-card2.png"
       return false;
@@ -65,7 +65,7 @@ function checkCard(){
        document.documentElement.style.setProperty('--color2', "#f62f5e")
        cardImage.src = "image/membership_3.png"
    }
-   document.querySelector('.total-point').textContent="Total: "+INTpoint+"points";
+   // document.querySelector('.total-point').textContent="Total: "+INTpoint+"points";
 }
 checkCard();
 
