@@ -48,6 +48,12 @@ function checkCard(){
    let pointLS = localStorage.getItem("point");
    let INTpoint = parseInt(pointLS);
    var cardImage = document.querySelector(".membercard");
+   
+   if(Number.isNaN(INTpoint)){
+      cardImage.src = "image/white-card2.png"
+      return false;
+  }
+
    if(INTpoint < 900){
        cardImage.src = "image/white-card2.png"
    }
