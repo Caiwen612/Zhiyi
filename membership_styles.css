@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400;1,500&display=swap");
+
+:root {
+  --black-text: #1d1f1c;
+  --white-ish: #f6f5f5;
+  --darker-accent: #ebe9e9;
+}
+
+main *,
+main *::after,
+main *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  -webkit-box-shadow: -10px 0px 13px -7px var(--black-text),
+    10px 0px 13px -7px var(--black-text), 5px 5px 15px 12px rgba(163, 163, 163, 0);
+  box-shadow: -10px 0px 13px -7px var(--black-text),
+    10px 0px 13px -7px var(--black-text), 5px 5px 15px 12px rgba(163, 163, 163, 0);
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 1000px;
+  background-color: var(--white-ish);
+}
+
+/** HEADERS **/
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+
+  .line-content h1:before {
+    content: "~ ";
+    font-size: 30px;
+    font-weight: normal;
+  }
+  
+  .line-content h1:after {
+    content: " ~ ";
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+h2:before {
+  content: "~ ";
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h2:after {
+  content: " ~ ";
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+
+
+/** HEADER **/
+
+main nav {
+  height: 300px;
+  background-image: url("image/background21.jpg");
+  background-size: 100%;
+  background-position: 1% 81%;
+}
+
+.header_membership {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: "Alegreya Sans", sans-serif;
+  padding-left: 2em;
+}
+
+.header_membership span:nth-child(1) {
+  opacity: 60%;
+}
+
+.header_membership span:nth-child(2) {
+  margin-left: 0.8em;
+  transition: 1s margin-left linear;
+}
+
+.header_membership span:nth-child(2):hover {
+  margin-left: 0em;
+}
+
+.header_membership span:nth-child(3) {
+  margin-left: 2.1em;
+  transition: 1s margin-left linear;
+}
+
+.header_membership span:nth-child(3):hover {
+  margin-left: 0em;
+}
+
+.header_membership span {
+  display: block;
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+  margin-bottom: -0.4em;
+}
+
+/** MENU SECTIONS **/
+.section_membership {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  opacity: 100%;
+  transition: opacity 1s forwards;
+  color: var(--black-text);
+}
+
+.section_membership:hover {
+  opacity: 90%;
+  -webkit-box-shadow: -10px 0px 13px -7px #525252b0, 10px 0px 13px -7px #525252b0,
+    5px 5px 15px 5px rgba(145, 145, 145, 0.06);
+  box-shadow: -10px 0px 13px -7px #525252b0, 10px 0px 13px -7px #525252b0,
+    5px 5px 15px 5px rgba(145, 145, 145, 0.06);
+}
+
+.section_membership + .darker {
+  background-color: var(--darker-accent);
+}
+
+.section_membership .line-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.section_membership .line-header {
+  font-weight: bolder;
+}
+
+.line-container {
+  padding: 0.2em;
+  margin: 0.2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.line-header {
+  margin-left: 3rem;
+  text-align: center;
+  min-width: 10em;
+  max-width: 10em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  
+}
+
+
+.line-content {
+  font-size: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-content h1{
+    font-size: 30px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_side_by_side {
+    display: flex;
+}
+    
+.product_side_by_side li {
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+} 
+
+
+
+
+/** table **/
+
+
+#level {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #level td, #level th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #level tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #level tr:hover {background-color: #ddd;}
+  
+  #level th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #f2d0ff;
+    color: white;
+  }
+
+.dot1{
+    font-size: 90px;
+    color: rgb(248, 153, 166);
+  }
+  .dot2{
+    font-size: 90px;
+    color: black;
+  }
+  .dot3{
+    font-size: 90px;
+    color: gold;
+  }
+
+
+  /**sidenav**/
+
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 1;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav h1{
+      font-size: 30px;
+  }
+  .sidenav a{
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+
+  main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    margin-top: 0rem;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+/**slide show**/
+
+main * {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 400px;
+    min-height: 515px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+

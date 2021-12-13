@@ -1,0 +1,168 @@
+/*   Author  : Low Zhi Yi   */
+
+/* Chatbot Overall Container */
+.chatbot {
+    position: fixed;
+    bottom: 0;
+    right: 1.5em;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+/* Header Section */
+.chat-header {
+    background-color: rgb(190, 188, 188);
+    color: rgb(36, 44, 57);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px 10px 0 0;
+    border-width: 2px;
+    border-top-color: rgb(118, 118, 118);
+    border-left-color: rgb(133, 133, 133);
+    text-align: left;
+    width: 300px;
+}
+
+.chat-header img {
+    display: inline-block;
+}
+
+.minus-icon:after {
+    float: right;
+    content: "\2796";   /* Unicode character for "minus" sign (-) */
+}
+
+/* Chat Section -- Containers */
+.chat-hide {
+    background: url(image/chat-background2.png) center/cover;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.relative-container {
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    overflow: auto;
+    min-height: 370px;
+    position: relative;
+    bottom: 0;
+}
+
+.absolute-container {
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Input Section */
+.chat-input {
+    width: 100%;
+    background: rgb(190, 188, 188);
+    padding: 8px 0;
+    position: sticky;
+    bottom: 0;
+    float: left;
+}
+
+.chat-input-inner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -- text input */
+#userInput {
+    width: 90%;
+}
+
+.inputBox {
+    color: black;
+    width: 185px;
+    height: 13px;
+    padding: 5%;
+    border-radius: 1em;
+    outline: none;
+    float: left;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid rgb(118, 118, 118);
+    border-bottom: 2px solid rgb(118, 118, 118);
+}
+
+/* -- send button */
+.chat-send {
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    width: 15%;
+    font-size: 1.5em;
+    cursor: pointer;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;  
+}
+
+.chat-send:hover {
+    transform: scale(1.2,1.2) translateY(-2px);
+}
+
+
+/* Class generated in js */
+/* Users Messages */
+.userText {
+    font-size: 1em;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #dbd7d7;
+    padding: 5px 11px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin-right: 12px;
+    color: black;
+}
+
+
+/* Chatbot Messages */
+#chat-time {
+    margin: 1.33em 0;
+    font-weight: bold;
+}
+
+.botText {
+    color: white;
+    font-size: 1em;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background-color: rgb(116, 116, 108);
+    padding: 5px 11px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin-left: 12px;
+}
+
+.botText span:hover {
+    background-color: #646c74;
+    transition: background-color 1s linear;
+}
+
+.chat-link {
+    color: rgb(201, 201, 212);
+    font-style: italic;
+    text-decoration: underline;
+}

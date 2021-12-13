@@ -1,0 +1,226 @@
+/*Author: Yeong Kai Xin */
+
+/*feedback review page*/
+#review_slide {
+  background-image: linear-gradient( white, rgb(214, 214, 209),white);
+  margin: 40px 0px 40px 0px;
+}
+
+.review {
+  width: 700px;
+  height: 300px;
+  background-color: #dddddd;
+  box-shadow:  10px 10px  #a19f9f;
+  margin: 40px auto 1px auto;
+  display: none;
+}
+
+.review_description {
+  text-align: center;
+  padding-top: 60px;
+  margin-right: 20px;
+}
+
+#prev_review, #next_review {
+  cursor: pointer;
+  position: absolute;
+  top: 112%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 20px 20px 20px 20px;
+  user-select: none;
+  margin-left: 10px;
+}
+
+#next_review {
+  top: 112%;
+  right: 0;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 20px;
+}
+
+#prev_review:hover, #next_review:hover {
+  background-color: white;
+}
+/* rgba(201, 199, 199, 0.8)*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+#film_review {
+  background-image: url(image/film\ strip.jpg);
+  background-repeat: repeat-x;
+  font-size: 15px;
+}
+
+#first_review {
+  border-radius: 15px 15px;
+  background-color: #dfdfdf;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 320px;
+  height: 120px;
+  margin: 100px 50px 20px 10px;
+}
+
+#second_review, #third_review {
+  border-radius: 15px 15px;
+  background-color: #dfdfdf;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 320px;
+  height: 120px;
+  margin: 100px 50px 0px 0px;
+}
+
+#fourth_review {
+  border-radius: 15px 15px;
+  background-color: #dfdfdf;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 320px;
+  height: 120px;
+  margin: 0px 30px 99px 10px;
+}
+
+#fifth_review {
+  border-radius: 15px 15px;
+  background-color: #dfdfdf;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 320px;
+  height: 120px;
+  margin: 0px 50px 0px 20px;
+}
+
+#sixth_review {
+  border-radius: 15px 15px;
+  background-color: #dfdfdf;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 320px;
+  height: 120px;
+}
+
+
+.film_side {
+  display: flex;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.review_link {
+  text-decoration: none;
+  color: rgb(120, 153, 153);
+}
+
+.review_link:hover {
+  color: #0b8359;
+}
+
+#audio_review1 {
+  border-radius: 15px 15px;
+  background-image: url(image/audio_background.jpg);
+  background-size: 330px 200px;
+  background-repeat: no-repeat;
+  background-color: rgb(157, 178, 179);
+  padding: 15px;
+  width: 300px;
+  height: 330px;
+  margin: 0px auto 74px 240px;
+}
+
+#audio_review2 {
+  border-radius: 15px 15px;
+  background-image: url(image/audio_background.jpg);
+  background-size: 330px 200px;
+  background-repeat: no-repeat;
+  background-color: rgb(157, 178, 179);
+  padding: 15px;
+  width: 300px;
+  height: 330px;
+  margin: 0px 240px 0px auto;
+}
+
+#audio_side {
+  display: flex;
+}
+
+#audio_style {
+  background-image: linear-gradient(white,rgb(226, 248, 237),white);
+}
+
+/*Sephora Feedback form*/
+#feedback_bg {
+  background-image: url(image/sephora_form.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+#feedback_container {
+  margin: auto;
+  max-width: 400px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#customerName, input[type=tel], input[type=email], textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 8px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+#customerName:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+  }
+
+#submit_btn {
+  background-color: #405f54;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+#submit_btn:hover {
+  opacity: 1;
+}

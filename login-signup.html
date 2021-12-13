@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   Author: Low Zhi Yi   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login to Sephora</title>
+
+    <link rel="icon" href="image/favicon.jpg" type="image/jpg" />       <!-- Favicon -->
+    <link rel="stylesheet" href="login-signup.css" type="text/css" />   <!-- Styles for whole page -->
+</head>
+<body>
+    <div id="animation">
+        <span class="line1">Register</span>
+        <span class="line2">to get 50 points!</span>
+    </div>
+    
+    <div class="container">
+        <div class="forms">
+            <!-- Login Form -->
+            <form id="signin-form" action="index.html">
+                <h1>LOGIN</h1>
+                <div class="group">
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="text" class="input" required />
+                </div>
+                <div class="group">
+                    <label for="pw">PASSWORD</label>
+                    <input id="pw" type="password" class="input" required />
+                </div>
+                <div class="group">
+                    <input type="submit" id="signin" class="button" value="SIGN IN" />
+                </div>
+                <div class="hyperlink">
+                    <p>Don't have an account? <a href="" id="to-signup">Register</a></p>
+                    <a href="" id="forgotpw">Forgot Password</a><br />
+                </div>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form" class="hide">
+                <h1>SIGN UP</h1>
+                <div class="group">
+                    <label for="SU-name">FULL NAME</label>
+                    <input id="SU-name" type="text" class="input" required />
+                </div>
+                <div class="group">
+                    <label for="SU-email">EMAIL</label>
+                    <input id="SU-email" type="text" class="input" required />
+                </div>
+                <div class="group">
+                    <label for="SU-pw">PASSWORD</label>
+                    <input id="SU-pw" type="password" class="input" required />
+                </div>
+                <div class="group">
+                    <label for="SU-pw2">REPEAT PASSWORD</label>
+                    <input id="SU-pw2" type="password" class="input" required />
+                </div>
+                <div class="group">
+                    <input type="submit" id="signup" class="button" value="SIGN UP" />
+                </div>
+                <div class="hyperlink">
+                    <p>Already have an account? <a href="" id="to-signin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="login-signup.js"></script>
+</body>
+</html>

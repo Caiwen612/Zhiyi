@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   Author: Low Zhi Yi   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Account</title>
+
+    <link rel="icon" href="image/favicon.jpg" type="img/jpg" />     <!-- Favicon -->
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />  <!-- Styles for header and footer -->
+    <link rel="stylesheet" href="account.css" type="text/css" />    <!-- Styles for main content -->
+    <link rel="stylesheet" href="livechat.css" type="text/css" />   <!-- Styles for livechat -->
+
+    <script>
+        // Check if user already login, if not, change to login page
+        if (localStorage.logInName == null) {
+            alert("Please login to view your profile!");
+            window.location.href = "login-signup.html";
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Left Navigation -->
+        <div class="left-nav">
+            <nav>
+                <a href="#">Account</a>
+                <a href="#toAddress">Address</a>
+            </nav>
+        </div>
+
+        <!-- Right Contents -->
+        <div class="content">
+            <!-- Account Fieldset -->
+            <fieldset id="profile">
+                <legend>My Account</legend>
+                <div>
+                    <div id="profile-img" class="img-unknown"></div>
+                    <a href="index.html" id="logout"><img src="image/logout.png" alt="logout button" height="40" title="Logout" /></a>
+
+                    <label>Name: </label>
+                    <p id="displayName"></p><br />
+    
+                    <label>Email: </label>
+                    <p id="displayEmail"></p><br />
+    
+                    <label>Gender: </label>
+                    <input type="radio" id="male" name="gender" class="gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" class="gender" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="secret" name="gender" class="gender" checked />
+                    <label for="secret">Prefer not to say</label>
+
+                    <br class="clearfix"/><br /><hr /><br />
+
+                    <div class="member">
+                        <a href="beauty_profile.html"><img src="image/white-card2.png" alt="white card" height="100" class="card" title="Beauty Profile" /></a>
+                        <p class="hide">You are a <span class="typemembership">WHITE</span> member!</p>
+                        <p class="hide2"><em>Click the card to view your beauty profile!</em></p>
+                    </div>
+
+                    <br id="toAddress" />
+                </div>
+            </fieldset>
+
+            <br /><br /><br />
+
+            <!-- Address Fieldset -->
+            <fieldset id="address">
+                <legend>Address</legend>
+                <table>
+                    <colgroup style="width: 500px;">
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 45%;" />
+                        <col style="width: 15%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th><input type="button" value="+" id="addAddressButton" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Address details will be inserted here after submit form -->
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <!-- Add New Address Form -->
+            <div class="overlay"></div>
+            <form id="address-form">
+                <div class="addAddress">
+                    <a href="" class="close" onclick="querySelector('.addAddress').onclick.style.display = 'none'">&times;</a>
+                    <h2>NEW ADDRESS</h2>
+                    <div class="address-detail">
+                        <label for="addressName">Name</label>
+                        <input type="text" id="addressName" class="address-input" placeholder="Voo Nyuk Mee" required  
+                            pattern="^[a-zA-Z ]*$" />
+                        <br />
+
+                        <label for="addressPhone">Phone Number</label>
+                        <input type="tel" id="addressPhone" class="address-input" placeholder="(+6)011-1234 5678" required
+                            pattern="^(\+?6?01)[0-9][\-]?[0-9]{3,4}\s*?[0-9]{4}$" />
+                        <br />
+
+                        <label>Address</label>
+                        <select name="state" class="address-input" id="state" required>
+                            <option value="">-- State --</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Malacca">Malacca</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Penang">Penang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Terengganu">Terengganu</option>
+                        </select>
+
+                        <input type="text" id="postCode" class="address-input" placeholder="Postal Code" pattern="[0-9]{5}" required />
+                        <textarea id="addressDetails" name="addressDetails" class="address-input address-textarea" cols="30" rows="5" 
+                            placeholder="Unit/House number, Building, Street name, Area Name" required></textarea>
+
+                        <button id="storeAddress" class="saveAddress">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <!-- Header Button -->
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20" />
+            <b>Chatbot</b>
+        </button>
+
+        <!-- Chatbox Body -->
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!-- initial messages -->
+                    <div class="chatbox">
+                        <p id="chat-time"><!-- time --></p>
+                        <p id="botStartMsg" class="botText"><!-- initial messages --></p>
+                    </div>
+
+                    <!-- input section -->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!-- input box -->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!-- send button -->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- display chatbot replies -->
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    <!-- Account Javascript -->
+    <script src="account.js"></script>
+    <script src="address.js"></script>
+
+    <!-- Chatbot Javascript -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+</body>
+</html>

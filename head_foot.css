@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Asul';
+    src: url('font/Asul-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+/* Header */
+header {
+    background-image: url(image/background20.jpg);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header-container {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav > a > img {
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s ease-in;
+}
+
+nav > a:hover > img {
+    transform: scale(1.1,1.1);
+}
+
+.nav-text a {
+    color: black;
+    font-size: 20px;
+    font-weight: 555;
+    text-decoration: none;
+    padding: 0px 12px;
+}
+
+.nav-text li {
+    padding: 1px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;
+}
+
+.nav-text li:hover  {
+    padding: 2px;
+    opacity: 0.75;
+    transform: scale(1.1,1.1) translateY(-3px);
+}
+
+
+.nav-icon img, .social img {
+    padding: 10px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;
+}
+
+.nav-icon img:hover, .social img:hover {
+    opacity: 0.7;
+    transform: scale(1.2,1.2) translateY(-2px);
+}
+
+hr {
+    margin: 1px;
+}
+
+
+/* Main */
+body {
+    margin: 0;
+}
+
+section {
+    padding-right: 50px;
+}
+
+.main_background {
+    background-color: #dbd8d1;
+    padding-left: 15px;
+    border-radius: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.side_by_side {
+    display: flex;
+}
+
+.side_by_side li {
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 10px;
+    z-index: 2;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Footer */
+footer {
+    background: url(image/background20.jpg) bottom;
+    z-index: 3;
+}
+
+.footer-container {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer a {
+    font-family: 'Asul';
+    color: #3d3d3d;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: rgb(156, 138, 124);
+}
+
+footer li {
+    padding-bottom: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.app img {
+    padding-bottom: 4px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.2s linear;
+}
+
+.app img:hover {
+    opacity: 0.8;
+    transform: scale(1.1,1.1) translateY(-2px);
+}
+
+footer p {
+    text-align: center;
+    color: grey;
+    font-size: smaller;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    margin: 0;
+}

@@ -1,0 +1,322 @@
+/*   Author  : Low Zhi Yi   */
+
+
+/* Container */
+body {
+    background: url(image/background4.png) bottom/cover;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+/* Left Navigation */
+main nav {
+    position: fixed;
+    width: 160px;
+}
+
+.left-nav {
+    width: 160px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.left-nav a {
+    display: block;
+    padding: 10px;
+    margin: 20px 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: whitesmoke;
+    /* color: rgb(160, 143, 66); */
+    background: url(image/nav-hover.png) center/cover;
+}
+
+.left-nav a:hover {
+    color: blanchedalmond;
+    background: url(image/nav-hover.gif) center/cover;
+}
+
+.left-nav a::after main {
+    transition: all ease-in-out 1s;
+}
+
+
+/* Form Styles */
+.content {
+    width: 78%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgb(104, 93, 79);
+}
+
+fieldset > legend {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Asul', Arial, sans-serif;
+}
+
+fieldset > div {
+    margin: 15px 30px 20px;
+}
+
+
+
+/* --- Profile Fieldset --- */
+/* Background */
+#profile {
+    background: url(image/gif-heart.gif) right bottom/150px auto no-repeat, rgba(255, 255, 255, 0.8);
+}
+
+/* Logout Button */
+#logout {
+    float: right;
+}
+
+#logout:hover {
+    opacity: 0.7;
+}
+
+/* Account Details */
+#profile label {
+    font-family: 'Asul';
+    font-size: larger;
+}
+
+#displayName, #displayEmail, .gender {
+    display: inline-block;
+    margin: 18px 2px 18px 14px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Member card */
+.member {
+    font-family: 'Asul', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.card {
+    float: left;
+    transform: scale(1,1) translateY(0px);
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05,1.05) translateY(1px);
+}
+
+.typemembership {
+    font-weight: bold;
+}
+
+.hide, .hide2 {
+    display: inline-block;
+    opacity: 0;
+    text-align: right;
+}
+
+.hide {
+    width: 75%;
+    margin: 18px 0;
+    transition: all 1.5s ease-in;
+}
+.hide2 {
+    font-size: medium;
+    width: 70%;
+    margin: 5px 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.7s;
+}
+
+.member:hover .hide {
+    opacity: 1;
+    width: 350px;
+}
+.member:hover .hide2 {
+    opacity: 1;
+    width: 65%;
+}
+
+/* Gender Color Change */
+.female {
+    border-color: #f19496;
+    box-shadow: 4px 4px 8px #8a4041;
+}
+.female legend {
+    color: #cc3546;
+}
+.female hr {
+    border-color: #f19496;
+}
+
+.male {
+    border-color: #8ccdee;
+    box-shadow: 4px 4px 8px #35637a;
+}
+.male legend {
+    color: #2784a3;
+}
+.male hr {
+    border-color: #8ccdee;
+}
+
+/* Profile Picture */
+#profile-img {
+    height: 160px;
+    width: 130px;
+    float: left;
+    margin: 0 40px 20px 5px;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgb(160, 159, 159);
+}
+
+.img-female {
+    background: #eed3d3 url(image/gender.png) right/260px 172px no-repeat;
+    transition: background 0.2s;
+}
+
+.img-male {
+    background: #d0dfe7 url(image/gender.png) left/243px 170px no-repeat;
+    transition: background 0.2s;
+}
+
+.img-unknown {
+    background: #e4e6e7 url(image/gender-blank.png) center/102px 102px no-repeat;
+    transition: background 0.1s;
+}
+
+
+
+/* --- Address Fieldset --- */
+/* Address Table */
+#address table {
+    display: block;
+    height: 100%;
+    overflow-y: hidden;
+    margin: 10px 20px;
+    border-radius: 2px;
+    border-collapse: collapse;
+}
+
+#address table th {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#address table td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Remove icon */
+.remove div {
+    min-height: 40px;
+    width: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    background: url(image/trash-close.png) center/cover;
+}
+.remove div:hover {
+    background-image: url(image/trash-open.png);
+}
+
+
+
+/* --- Popup Address Form --- */
+/* Semi transparent background */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+    display: none;
+}
+
+/* Popup Form */
+.addAddress {
+    display: none;
+    z-index: 33;
+    position: fixed;
+    background:url(image/chat-background3.png) center/cover;
+    width: 400px;
+    height: 470px;
+    top: calc(50% - 235px);
+    left: calc(50% - 200px);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(65, 55, 44);
+}
+
+/* Close Button */
+.close{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    top: 5px;
+    right: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Form Heading */
+.addAddress h2 {
+    margin: 20px 0 10px;
+    padding: 0 20px;
+    font-family: 'Asul', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+
+/* Form labels and inputs */
+.address-detail label, .address-detail option {
+    margin: 0 15px;
+    font-size: 14px;
+    font-family: 'Asul', Arial, sans-serif;
+}
+
+.address-input {
+    height: 28px;
+    padding: 0 10px;
+    margin: 2px 15px 10px;
+    width: 87%;
+    font-family: 'Asul', Arial, sans-serif;
+}
+
+#state {
+    width: 93%;
+}
+
+.address-textarea{
+    height: 100px;
+    font-size: .8em;
+    padding-top: 10px;
+}
+
+/* Save button */
+.saveAddress{
+    margin: 15px 17px 5px 0;
+    float: right;
+    width: 30%;
+    background-color: white;
+}

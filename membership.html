@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora: Profile</title>
+    <link rel="icon" href="image/favicon.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />
+    <link rel="stylesheet" href="membership_styles.css" type="text/css" />
+    <link rel="stylesheet" href="product_style.css" type="text/css" />
+    <link rel="stylesheet" href="livechat.css" type="text/css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+
+    <div class="sidenav">
+        <h1>Membership</h1>
+        <a href="membership.html">Beauty Pass Benefits</a>
+        <a href="beauty_profile.html">Beauty Profile</a>
+    </div>
+
+    <main>
+        <div class="preload">
+            <div class="container">
+                <nav>
+                    <div class="header_membership">
+                        <span>Beauty</span>
+                        <span>Pass</span>
+                        <span>Benefits</span>
+                    </div>
+                </nav>
+            
+        
+                <div class="section_membership">
+                    <div class="line-container">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="image/membership_8.jpg" alt="slide1" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="image/membership_10.jpg" alt="slide2" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="image/membership_11.jpg" alt="slide3" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                
+            
+
+                    <script src="slideshow_membership.js"></script>
+                </div>
+
+        
+                <div class="section_membership darker">
+                    <div class="line-container">
+                        <div class="line-header"></div>
+                        <div class="line-content">
+                            <h1> COMPLIMENTARY GIFTS </h1>
+                        </div>
+                    </div>
+                        <div class="line-content">Enjoy more amazing rewards and perks when you upgrade to the next tier.</div>
+                        
+                    <div class="line-container">
+                        <ul class="product_side_by_side">
+                            <li>
+                                <img src="image/membership_6.png" alt="This the first complimentary image" width="470px">
+                                <p><strong>BIRTHDAY</strong><br>Enjoy 2x bonus points on one purchase <br> during your birthday month</p>
+                            </li>
+                            <li>
+                                <img src="image/membership_7.png" alt="This is the second complimentary image" width="470px">
+                                <p><strong>TIER UPGRADE</strong><br>Receive an exclusive Beauty Pass gift with <br> each tier upgrade</p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+        
+                <div class="section_membership">
+
+                    <div class="line-container">
+                        <div class="line-header"></div>
+                        <div class="line-content">
+                            <h1> MEMBERSHIP LEVELS </h1>
+                        </div>
+                    </div>
+        
+                    <table id="level">
+                        <tr>
+                            <th></th>
+                            <th><img src="image/membership_1.png" alt="sephora white"></th>
+                            <th><img src="image/membership_2.png" alt="sephora black"></th>
+                            <th><img src="image/membership_3.png" alt="sephora gold"></th>
+                        </tr>
+                        <tr>
+                            <td>Spend per 12 month period</td>
+                            <td><strong>FREE</strong></td>
+                            <td><strong>RM 900</strong></td>
+                            <td><strong>RM 4500</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Rewards Boutique</td>
+                            <td class="dot1">&#8226;</td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Birthday 2x points</td>
+                            <td class="dot1">&#8226;</td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Members-only promotions</td>
+                            <td class="dot1">&#8226;</td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Welcome gift</td>
+                            <td></td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Birthday gift</td>
+                            <td></td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Beauty Pass Sales</td>
+                            <td></td>
+                            <td class="dot2">&#8226;</td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Beauty Pass Sale early access</td>
+                            <td></td>
+                            <td></td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive events & launches</td>
+                            <td></td>
+                            <td></td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                        <tr>
+                            <td>Custom makeovers</td>
+                            <td></td>
+                            <td></td>
+                            <td class="dot3">&#8226;</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section_membership darker">
+                    <div class="line-container">
+                        <div class="line-header"></div>
+                        <div class="line-content">
+                            <h1> Accumulate Points </h1>
+                        </div>
+                    </div>
+                    <div class="line-content" style="text-align: center;">Earn points every time you shop, connect and share with us. </div>
+                    <br>
+
+
+                    <div class="section-content">
+                        <div class="line-container">
+                            <div class="line-header">Shop with Sephora</div>
+                            <div class="line-content">1 Point for every MYR 3 spent </div>
+                        </div>
+                        <br>
+                        <div class="line-container">
+                            <div class="line-header">Celebrate your Birthday</div>
+                            <div class="line-content">2x points in your birthday month</div>
+                        </div>
+                        <br>
+                        <div class="line-container">
+                            <div class="line-header">Register your account</div>
+                            <div class="line-content">+50 points</div>
+                        </div>
+                        <br>
+                        <div class="line-container">
+                            <div class="line-header">Write a product review</div>
+                            <div class="line-content">+5 points</div>
+                        </div>
+                        <br>
+                        <div class="line-container">
+                            <div class="line-header">Complete your Beauty Profile</div>
+                            <div class="line-content">+50 points</div>
+                        </div>
+                        <br>
+                        <div class="line-container">
+                            <div class="line-header">Download the mobile app</div>
+                            <div class="line-content">+40 points.</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!--Chatbot-->
+    <div class="chatbot">
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20px" />
+            <b>Chatbot</b>
+        </button>
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!--messages-->
+                    <div class="chatbox">
+                        <h4 id="chat-time"></h4>
+                        <p id="botStartMsg" class="botText"></p>
+                    </div>
+
+                    <!--input section-->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!--input box-->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!--send button-->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20px" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+</body>
+</html>

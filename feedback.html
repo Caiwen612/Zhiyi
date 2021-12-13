@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Yeong Kai Xin !-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora: Customer Feedback</title>
+    <link rel="icon" href="image/favicon.jpg" type="img/png" />
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />
+    <link rel="stylesheet" href="feedback.css" type="text/css" />
+    <link rel="stylesheet" href="livechat.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+
+    <main>
+        <div>
+            <ul style="display: flex; background-image: url(image/feedback_background.PNG); background-size: 690px;  background-repeat: no-repeat;">
+                <li style="margin-right: 90px; margin-left: 30px; text-align: center; font-size: 60px; line-height: 330px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: rgb(93, 89, 129);">
+                    Customer Feedback
+                </li>  
+                <li>
+                    <img src="image/feedback.jpg" alt="This is product delivery image" width="500" style="float: right;">
+                </li>
+            </ul>
+        </div>
+
+        <section id="review_slide">
+            <div>
+                <div style="text-align: center;color: rgb(124, 113, 113); font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    See what are they review about Sephora? 
+                </div>
+                <div class="review fade">
+                    <img style="float: left;width: 34.5%;margin-right: 20px;" src="image/review1.PNG" alt="KOL review image 1">
+                    <div class="review_description">
+                        <h3>Ms. Christinna Kuan</h3>
+                        Key Opinion Leader in Malaysia <br><br>
+                        <p>" Sephora is an awesome website to purchase makeup and fragrance products. 
+                            There are many variety of the makeup and fragrance products that sell here. "</p>                        
+                    </div>
+                </div>
+
+                <div class="review fade">
+                    <img style="float: left;width: 34.5%;margin-right: 20px;" src="image/review2.PNG" alt="KOL review image 2">
+                    <div class="review_description">
+                        <h3>Mr. Brian See</h3>
+                        Key Opinion Leader in Malaysia <br><br>
+                        <p>" Sephora is such a great company. My orders always arrive within a few days and the products they carry are 
+                            some of the best in the beauty industry. If you don’t like a product you can always return with no hassle. "</p>                        
+                    </div>
+                </div>
+
+                <div class="review fade">
+                    <img style="float: left;width: 34.7%;margin-right: 20px;" src="image/review3.PNG" alt="KOL review image 3">
+                    <div class="review_description">
+                        <h3>Ms. Kittie Yiyi</h3>
+                        Fashion Designer in Malaysia <br><br>
+                        <p>" With Sephora, I know I'm getting a good price on makeup and perfume. 
+                            They have a list of things I like and would like to try. "</p>                        
+                    </div>
+                </div>
+
+                <div class="review fade">
+                    <img style="float: left;width: 34.7%;margin-right: 20px;" src="image/review4.PNG" alt="KOL review image 4">
+                    <div class="review_description">
+                        <h3>Ms. Fyra Al-Yahya</h3>
+                        Key Opinion Leader in Malaysia <br><br>
+                        <p>" I have been a customer for years and buy from them at least once a week. 
+                            The best part is no matter how big or small my order, I always get free shipping. "</p>
+                    </div>
+                </div>
+
+                <a id="prev_review" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next_review" onclick="plusSlides(1)">&#10095;</a>                     
+            </div>
+        </section>
+
+        <div id="audio_style">
+            <h2 style="margin-top: 150px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: darkslategrey;font-size: 40px;">Listen to their feedback.</h2>
+            <ul id="audio_side">
+                <li id="audio_review1">
+                    <img src="image/audio_1.jpg" alt="audio_review1" style="border-radius: 50%; padding-top: 10px;" width="90" height="90">
+                    <p><span style="font-weight: bold; font-size: 20px;">Bernice</span> 
+                        <br>
+                        International Reviewer - USA
+                    </p>
+                    <audio style="margin-top: 60px;" src="audio/review1.mp3" controls ></audio>                                
+                </li>
+
+                <li id="audio_review2">
+                    <img src="image/audio_2.jpg" alt="audio_review2" style="border-radius: 50%; padding-top: 10px;" width="90" height="90">
+                    <p><span style="font-weight: bold; font-size: 20px;">Jonathan</span> 
+                        <br>
+                        International Reviewer - Singapore
+                    </p>
+                    <audio style="margin-top: 60px;" src="audio/review2.mp3" controls ></audio>                                
+                </li>
+            </ul>
+        </div>
+
+        <div id="film_review">
+            <ul class="film_side">
+                <li id="first_review">
+                    <p>
+                        " By far one of my favorite concealers. If I could recommend this concealer 1000 times I would. "
+                    </p>
+                    <a class="review_link" href="makeup_face1.html"><span class="review_link"><b>Nars Radiant Creamy Concealer - Vanilla</b></span></a><br/>
+                    <b>by Janet Lee</b>                  
+                </li>                    
+
+                <li id="second_review">
+                    <p>
+                        " The best lipgloss I’ve ever owned.😍 Couldn’t be happier with this product and will definitely it buy again "
+                    </p>
+                    <a class="review_link" href="makeup_lips2.html"><span class="review_link"><b>Dior Lip Maximizer - Light Pink</b></span></a><br/>
+                    <b>by Vanessa</b>                  
+                </li>                    
+                
+                <li id="third_review">
+                    <p>
+                        " Love this product. It came in good conditions. Thanks Sephora for genuine product. "
+                    </p>
+                    <a class="review_link" href="makeup_eyes3.html"><span class="review_link"><b>Dior Backstage Eye Palette - Cool Neutral</b></span></a><br/>
+                    <b>by Monir Ebrahimiaghdam</b>                   
+                </li>
+            </ul>
+
+            <ul class="film_side">
+                <li id="fourth_review">
+                    <p>
+                        " Very fast delivery and received parcel without any dent or broken parts on packaging, 
+                        Im really satisfied!❤️ "
+                    </p>
+                    <a class="review_link" href="fragrance_women2.html"><span class="review_link"><b>Dior J'adore Eau De Parfum - 50ml</b></span></a><br/>
+                    <b>by Nurul Samirah</b>   
+                </li>
+
+                <li id="fifth_review">
+                    <p>
+                        " It removes my makeup so effortlessly just like a hand wipes!
+                            A great makeup remover for days! "
+                    </p>
+                    <a class="review_link" href="makeup_remover2.html"><span class="review_link"><b>Sephora Cleansing Face Wipe - Aloe Vera</b></span></a><br/>
+                    <b>by Cherry</b>   
+                </li>
+
+                <li id="sixth_review">
+                    <p>
+                        " Very smooth application. Love that these are cruelty free and non-toxic too.👍 "
+                    </p>
+                    <a class="review_link" href="makeup_nail3.html"><span class="review_link"><b>Ciate London Plant Pots Nail Polish - Iced Frappe</b></span></a><br/>
+                    <b>by Gwen</b>   
+                </li>                    
+            </ul>
+        </div>
+
+        <div id="feedback_bg">
+            <form id="feedback_container" action="https://formspree.io/f/xknynbqz" method="POST" >
+                <h1 style="text-align: center;">Feedback Form</h1>
+                <div>
+                    <label>
+                        Your name :
+                        <input id="customerName" type="text" name="name" placeholder="Enter name" required>
+                    </label>                    
+                </div>
+
+                <div>
+                    <label>
+                        Phone Number :
+                        <input name="phoneNo" type="tel" 
+                        placeholder="Enter phone number (0xx-xxxxxxx)"
+                        pattern="^(\01)[0-9][\-]?[0-9]{7,8}$" required>
+                                       
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Your email :
+                        <input type="email" name="email" placeholder="Enter email" required>
+                    </label>                    
+                </div>
+
+                <div>
+                    <label>
+                        Your feedback :
+                        <textarea name="feedback" placeholder="Write your feedback here!" required></textarea>
+                    </label>                    
+                </div>
+
+                <div>
+                    <button id="submit_btn" type="submit">Send Feedback</button>                    
+                </div>
+
+            </form>
+        </div>
+    </main>
+    
+        <!--Chatbot-->
+    <div class="chatbot">
+        <!-- Header Button -->
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20" />
+            <b>Chatbot</b>
+        </button>
+
+        <!-- Chatbox Body -->
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!-- initial messages -->
+                    <div class="chatbox">
+                        <p id="chat-time"><!-- time --></p>
+                        <p id="botStartMsg" class="botText"><!-- initial messages --></p>
+                    </div>
+
+                    <!-- input section -->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!-- input box -->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!-- send button -->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- display chatbot replies -->
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br />
+        <p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+    <script src="feedback.js"></script>  
+</body>
+</html>

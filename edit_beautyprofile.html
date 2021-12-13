@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora: Edit Beauty Profile</title>
+    <link rel="icon" href="image/favicon.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />
+    <link rel="stylesheet" href="edit_beautyprofile.css" type="text/css"/>
+    <link rel="stylesheet" href="livechat.css" type="text/css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+
+    <div class="sidenav">
+        <h1>Membership</h1>
+        <a href="membership.html">Beauty Pass Benefits</a>
+        <a href="beauty_profile.html">Beauty Profile</a>
+    </div>
+
+    <main>
+        <h1>My Beauty Profile</h1>
+        <hr class="solid">
+        <br>
+        <div class="btn-group">
+            <h2>Skin Tone:</h2>
+            <input type="radio" name="skin_color" id="skin-color" value="#ffdbac">
+            <button class="button btn1"  ></button>
+            <input type="radio" name="skin_color" id="skin-color" value="#f1c27d">
+            <button class="button btn2" ></button>
+            <input type="radio" name="skin_color" id="skin-color" value="#e0ac69">
+            <button class="button btn3" ></button>
+            <input type="radio" name="skin_color" id="skin-color" value="#c68642">
+            <button class="button btn4" ></button>
+            <input type="radio" name="skin_color" id="skin-color" value="#8d5524">
+            <button class="button btn5" ></button>
+        </div>
+
+        <form name="beautyProfile">
+            <div class="row">
+                <div class="column">
+                    <!-- <form name="validateSkinType" action="beauty_profile.html" onsubmit="return validatSkinType()"> -->
+                        <h2>Skin Type:</h2>
+    
+                            <input type="checkbox" name="skin_type" id="skin_type1" value="Sensitive">
+                            <label for="skin_type1">Sensitive</label><br>
+    
+                            <input type="checkbox" name="skin_type" id="skin_type2" value="Dry">
+                            <label for="skin_type2">Dry</label><br>
+    
+                            <input type="checkbox" name="skin_type" id="skin_type3" value="Combination">
+                            <label for="skin_type3">Combination</label><br>
+    
+                            <input type="checkbox" name="skin_type" id="skin_type4" value="Oily">
+                            <label for="skin_type4">Oily</label><br>
+    
+                            <input type="checkbox" name="skin_type" id="skin_type5" value="Normal">
+                            <label for="skin_type5">Normal</label><br>
+                        
+                        <br>
+                    <!-- </form> -->
+                    <!-- <form action="beauty_profile.html" name="validateSkinConcerns" onsubmit="validateSkinConcerns()"> -->
+                        <h2>Skin Concerns:</h2>
+                    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns1" value="Acne & Blemeshes">
+                            <label for="skin_concerns1">Acne & Blemeshes</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns2" value="Anti-agening">
+                            <label for="skin_concerns2">Anti-agening</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns3" value="Blackheads">
+                            <label for="skin_concerns3">Blackheads</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns4" value="Fimness & Elasticity">
+                            <label for="skin_concerns4">Fimness & Elasticity</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns5" value="Dryness">
+                            <label for="skin_concerns5">Dryness</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns6" value="Oiliness">
+                            <label for="skin_concerns6">Oiliness</label><br>
+    
+                            <input type="checkbox" name="skin_concerns" id="skin_concerns7" value="Fine Liness & Wrinkles">
+                            <label for="skin_concerns7">Fine Liness & Wrinkles</label><br>
+                        
+                         <br>
+                    <!-- </form> -->
+                    <!-- <form action="beauty_profile.html" name="validateSkinProduct" onsubmit="validateSkinProduct()"> -->
+                        <h2>Skincare Products used:</h2>
+                        
+                        <input type="checkbox" name="skincare_products" id="skincare_products1" value="Cleanser">
+                        <label for="skincare_products1">Cleanser</label><br>
+
+                        <input type="checkbox" name="skincare_products" id="skincare_products2" value="Toner">
+                        <label for="skincare_products2">Toner</label><br>
+
+                        <input type="checkbox" name="skincare_products" id="skincare_products3" value="Moisturiser">
+                        <label for="skin_concerns3">Moisturiser</label><br>
+
+                        <input type="checkbox" name="skincare_products" id="skincare_products4" value="Mask">
+                        <label for="skincare_products4">Mask</label><br>
+
+                        <input type="checkbox" name="skincare_products" id="skincare_products5" value="Other">
+                        <label for="skincare_products5">Other</label><br>
+                    
+                        <br>
+                    <!-- </form> -->
+                </div>
+                <div class=column>
+                    <!-- <form action="beauty_profile.html" name="validateHairColor" onsubmit="validateHairColor()"> -->
+                        <h2>Hair Color:</h2>
+
+                        <input type="radio" name="hair_color" id="hair-color" value="Black">
+                        <label for="hair_color">Black</label><br>
+
+                        <input type="radio" name="hair_color" id="hair-color" value="Blonde">
+                        <label for="hair_color">Blonde</label><br>
+
+                        <input type="radio" name="hair_color" id="hair-color" value="Grey">
+                        <label for="hair_color">Grey</label><br>
+
+                        <input type="radio" name="hair_color" id="hair-color" value="Brown">
+                        <label for="hair_color">Brown</label><br>
+
+                        <input type="radio" name="hair_color" id="hair-color" value="Red">
+                        <label for="hair_color">Red</label><br>
+                    <!-- </form> -->
+                    
+                    <!-- <form action="beauty_profile.html" name="validateHairConcerns" onsubmit="validateHairConcerns()"> -->
+                        <div>
+                            <h2>Hair Concerns:</h2>
+                            
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns1" value="Damaged">
+                                <label for="hair_concerns1">Damaged</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns2" value="Dandruff">
+                                <label for="hair_concerns2">Dandruff</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns3" value="Dullness">
+                                <label for="hair_concerns3">Dullness</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns4" value="Fine Hair">
+                                <label for="hair_concerns4">Fine Hair</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns5" value="Frizz">
+                                <label for="hair_concerns5">Frizz</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns6" value="Flatness">
+                                <label for="hair_concerns6">Flatness</label><br>
+        
+                                <input type="checkbox" name="hair_concerns" id="hair_concerns7" value="Heat Protection">
+                                <label for="hair_concerns7">Heat Protection</label><br>
+                      
+                            <br>
+                        </div>
+                    <!-- </form> -->
+                    <!-- <form action="beauty_profile.html" name="validateMakeup" onsubmit="validateMakeup()"> -->
+                        <div>
+                            <h2>Makeup Essentials:</h2>
+                           
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials1" value="Primer">
+                                <label for="makeup_essentials1">Primer</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials2" value="Foundation">
+                                <label for="makeup_essentials2">Foundation</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials3" value="Powder">
+                                <label for="makeup_essentials3">Powder</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials4" value="Blush">
+                                <label for="makeup_essentials4">Blush</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials5" value="Highlighter">
+                                <label for="makeup_essentials5">Highlighter</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials6" value="Mascara">
+                                <label for="makeup_essentials6">Mascara</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials7" value="Eyeliner">
+                                <label for="makeup_essentials7">Eyeliner</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials8" value="Eyeshadow">
+                                <label for="makeup_essentials8">Eyeshadow</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials9" value="Lipstick">
+                                <label for="makeup_essentials9">Lipstick</label><br>
+        
+                                <input type="checkbox" name="makeup_essentials" id="makeup_essentials10" value="Lip gloss">
+                                <label for="makeup_essentials10">Lip gloss</label><br>
+                          
+                            <br>
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <button type="button" class="update_btn">Update Profile</button> -->
+            </div>
+        </form>
+        
+
+    
+    </main>
+
+   
+    <!--Chatbot-->
+    <div class="chatbot">
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20px" />
+            <b>Chatbot</b>
+        </button>
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!--messages-->
+                    <div class="chatbox">
+                        <h4 id="chat-time"></h4>
+                        <p id="botStartMsg" class="botText"></p>
+                    </div>
+
+                    <!--input section-->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!--input box-->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!--send button-->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20px" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    
+
+    <!-- Chatbot -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+    <script src="edit_beautyprofile.js"></script>
+   
+</body>
+</html>

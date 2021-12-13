@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   Author: Tan Jie Yi   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora: About Us</title>
+    <link rel="icon" href="image/favicon.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />
+    <link rel="stylesheet" href="aboutus.css" type="text/css" />
+    <link rel="stylesheet" href="livechat.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+
+    <div class="container">
+   
+        <br>
+        <br>
+        <div id="slideshow" data-component="slideshow">
+            <div role="list">
+              <div class="slide">
+                <img src="image/shop1.png" alt="shop1" width="800" height="400">
+              </div>
+              <div class="slide">
+                <img src="image/shop2.jpg" alt="shop2" width="800" height="400">
+              </div>
+              <div class="slide">
+                <img src="image/shop3.jpg" alt="shop3" width="800" height="400">
+              </div>
+            </div>
+          </div>
+        <br> 
+         
+        <div class="back">
+            <h1>About Sephora</h1>
+        <p>Sephora is a visionary beauty-retail concept founded in France by Dominique Mandonnaud in 1970.
+             Sephora's unique, open-sell environment features an ever-increasing amount of classic and emerging 
+             brands across a broad range of product categories including skincare, makeup, fragrance, body and 
+             hair care, in addition to Sephora's own private label. <br><br>
+            Today, Sephora is not only the leading chain of perfume and cosmetics stores in France, but also a
+             powerful beauty presence in countries around the world. <br><br>
+            Owned by LVMH Moët Hennessy Louis Vuitton, the world's leading luxury goods group, Sephora is highly 
+            regarded as a beauty trailblazer, thanks to its unparalleled assortment of prestige products, unbiased
+             service from experts, interactive shopping environment, disruptive spirit and constant innovation. <br><br>
+            Sephora operates approximately 1,900 stores in 29 countries worldwide, with an expanding base of over
+             200 stores across the Asia Pacific region including Australia, China, Singapore, Malaysia, Thailand, Indonesia &amp; India.</p>
+            
+            <p> <br><br></p>
+            
+            <hr><br>
+            
+            
+            <p>Sephora operates its retail network on a stand-alone basis. In principle, Sephora does not grant any
+                 rights to third parties to operate its store concept and to use the Sephora trademark. However, you 
+                 can find our current career opportunities on our website. <br><br>
+            Be vigilant if you are solicited by pretended Sephora representatives proposing to join a Sephora franchise 
+            network and asking to pay a commitment fee. You are facing a fraudulent proposal.<br><br></p>
+    
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/rSLADnXi_lU?playlist=rSLADnXi_lU&autoplay=1&mute=1&loop=1"></iframe>
+            <br>
+            
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+        </div>
+
+    <!--Chatbot-->
+    <div class="chatbot">
+        <!-- Header Button -->
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20" />
+            <b>Chatbot</b>
+        </button>
+
+        <!-- Chatbox Body -->
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!-- initial messages -->
+                    <div class="chatbox">
+                        <p id="chat-time"><!-- time --></p>
+                        <p id="botStartMsg" class="botText"><!-- initial messages --></p>
+                    </div>
+
+                    <!-- input section -->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!-- input box -->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!-- send button -->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- display chatbot replies -->
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br />
+        <p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    <script src="aboutus.js"></script>
+
+    <!-- Chatbot -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+/* Author: Yeong Kai Xin */
+
+/* product page - makeup.html*/
+
+.horizontal_line {
+  border-width: 0.5px;
+}
+
+#makeupBanner_side {
+  display: flex;
+}
+
+#makeup_title {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 35px;
+  margin-left: 90px;
+  color: #6b6760;
+}
+
+.guide_style {
+  margin-right: 20px;
+}
+
+marquee {
+  margin: 0px 22px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #c0bd24;
+  font-size: 20px;
+}
+
+#guide_one {
+  background-color: #f0ece9;
+  border-left: 6px solid #3f372b;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 4px 12px;
+}
+
+#guide_two {
+  background-color: #feffe1;
+  border-left: 6px solid #6d6b00;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  padding: 4px 12px;
+}
+
+#guide_three {
+  background-color: #ffefef;
+  border-right: 6px solid #641c12;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 4px 12px;
+}
+
+#guide_four {
+  background-color: #faf2e2;
+  border-right: 6px solid #a55b06;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.makeup_link:hover {
+  color: #7e7e79;
+}
+
+/*product card with icon*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  height: 280px;
+  transition: all 0.4s linear;
+}
+
+.card:hover {
+  width: 230px;
+  height: 310px;
+}
+
+.card_content {
+  background-color: #dbd9d6;
+  padding: 7px;
+}
+
+.card_content:hover {
+  background-color: #acabab;
+}
+
+.card_layout li{
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.card_layout {
+  display: flex;
+  padding-bottom: 60px;
+  padding-right: 0px;
+}
+
+.card_img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
+/* Put the product list side by side 
+  used in: makeup_face.html, makeup_eyes.html, makeup_lips.html, 
+  makeup_nails.html, makeup_remover.html
+*/
+iframe{
+  border-width: 0px;
+}
+
+.product_side_by_side {
+display: flex;
+}
+
+#face_bg {
+  background-image: linear-gradient(white, rgb(248, 241, 233), white);
+}
+
+.product_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px;
+  margin: auto;
+
+  width: 27%;
+  background-color: white;
+  margin-inline-start: 0px;
+}
+
+.product_card:hover {
+  box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product_img {
+  width: 230px;
+  height: 240px;
+  transition: all 0.3s linear;
+  margin: auto;
+}
+
+.product_img:hover {
+  width: 250px;
+  height: 260px;
+}
+
+.product_side_by_side li {
+  list-style-type: none;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 90px;
+} 
+
+.link_style {
+  cursor: pointer;
+  padding: 0px 50px 0px 50px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Product Detail page */
+/* Position the image container (needed to position the left and right arrows) */
+.product_container {
+  margin-top: -100px;
+  position: relative;
+  z-index: -1;
+}
+
+.product_description {
+  width: 3800px;
+}
+
+/* Hide the images by default */
+.image_slide {
+  display: none;
+  margin-top: 40px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons for product image slide*/
+.prev, .next {
+  border-radius: 5px 5px 5px 5px;
+  color: black;
+  cursor: pointer;
+  margin-top: -50px;
+  padding: 16px;
+  position: absolute;
+  top:45%;
+  user-select: none;
+  width: auto;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 5px 5px 5px 5px;
+  left: 350px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(161, 161, 161, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  background-color: #f3eee6;
+  color: black;
+  font-size: 20px;
+  padding: 2px 2px;
+  text-align: center;
+  width: 387px;
+} 
+
+.image_row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* four columns side by side under the product image slide*/
+.image_column {
+  float: left;
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 10%;
+}
+
+/* five columns side by side under the product image slide */
+.image_column5 {
+  float: left;
+  padding-left: 16px;
+  width: 12%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*Product select choice */
+/*the container must be positioned relative:*/
+.selection {
+ position: relative;
+}
+
+.custom-select {
+  margin-top: 10px;
+}
+
+/*to hide the original SELECT element*/
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color:#ddcdb9;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 0;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/*style items (options):*/
+.select-items {
+  background-color: #d3c7b8;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 100%;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-side-by-side {
+  display: inline-block;
+}
+
+/*product detail collapsible content*/
+.product_collapsible {
+  background-color:#f1e8dc;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 18px;
+  text-align: left;
+  width: 100%;
+}
+
+.active, .product_collapsible:hover {
+  background-color: #e9d6be;
+}
+
+.collapsible_content {
+  background-color: #fff4e6;  
+  display: none;  
+  overflow: hidden;  
+  padding: 0 18px;
+}
+
+.product_collapsible:after {
+  color: white;  
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*Fragrance product page*/
+.fragrance_header {
+  text-align: center;
+  padding: 30px;
+}
+
+#womenFragrance_container {
+  background-image: url(image/wFragrance_bg.jpg); 
+  border-radius: 20px; 
+  padding-bottom: 20px;
+  margin: 0px 20px;
+}
+
+#menFragrance_container {
+  background-image: url(image/mFragrance_bg.jpg);  
+  border-radius: 20px; 
+  padding-bottom: 20px;
+  margin: 0px 20px;
+}
+
+.fragrance_side_by_side {
+  display: flex;
+  }
+  
+.fragrance_side_by_side li {
+  background-color: white;
+  list-style-type: none;
+  margin-left: 15px;
+  margin-right: 60px;
+  text-align: center;
+  border-radius: 10px;
+   width: 330px; 
+   height: 380px;
+   padding-top: 20px;
+} 
+
+.cart_button {
+  background-color: #c9b9a6;
+  border: none;
+  color: white;
+  margin-top: 55px;
+  margin-bottom: 12px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart_button:hover {
+  background-color: #af9f8e; 
+  box-shadow: 0 8px 8px 0 rgba(70, 69, 69, 0.24), 0 10px 20px 0 rgba(56, 56, 56, 0.19);
+}
+
+/*fragrance page*/
+#EDP_fragrance {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  background-color: #f0ebd7;
+  border-left: 6px solid #be9c04;
+  margin-right: 20px;
+}
+
+#EDT_fragrance {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  background-color: #e4e4e4;
+  border-left: 6px solid #424443;
+  margin-right: 20px;
+}
+
+#cologne_fragrance {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  background-color: #eceae3;
+  border-left: 6px solid #706e00;
+  margin-right: 20px;
+}
+
+
+/*product_delivery*/
+#delivery_header {
+  background-color: rgb(92, 87, 73);
+  color: white;
+}
+
+#delivery_body {
+  background-color: rgb(172, 166, 151);
+  color: white;
+}
+
+#delivery_background {
+  background-image: url(image/delivery_bg.jpg);
+  padding-left: 15px;
+  border-radius: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 20px;
+}
+
+#delivery_table tr, th, td {
+  padding: 8px;
+}
+
+
+
+
+
+

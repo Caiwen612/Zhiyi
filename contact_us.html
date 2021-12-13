@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora: Contact Us</title>
+    <link rel="icon" href="image/favicon.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="head_foot.css" type="text/css" />
+    <link rel="stylesheet" href="livechat.css" type="text/css" />
+    <link rel="stylesheet" href="contactus.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="header-container">
+            <a href="index.html"><img src="image/logo.png" alt="Sephora Logo" height="50" title="Homepage" /></a>
+            <ul class="nav-text">
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="account.html"><img src="image/icon-user.png" alt="profile icon" height="20" width="20" title="My account" /></a></li>
+                <li><a href="cart.html"><img src="image/icon-cart.png" alt="cart icon" height="20" width="20" title="My cart" /></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    
+
+  <main>
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Questions Us</h2>
+        <p>Any question that you confused you can just type below there</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="image/faqcontact us.jpg" style="width:100%">
+        </div>
+        <form  onsubmit="submitInform()" action="contact_us.html" >
+        <div class="column">
+        
+            <label for="fname">First Name</label>
+            <input class="inputText" type="text" id="fname" name="firstname" placeholder="Your name.." required autofocus>
+            <label for="lname">Last Name</label>
+            <input class="inputText" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            <label for="country">State</label>
+            <select id="country" name="country" required>
+              <option value="select">Select a state</option>
+              <option value="Johor">Johor</option>
+              <option value="Kedah">Kedah</option>
+              <option value="Kelantan">Kelantan</option>
+              <option value="KualaLumpur">Kuala Lumpur</option>
+              <option value="Malacca">Malacca</option>
+              <option value="Negeri Sembilan">Negeri Sembilan</option>
+              <option value="Pahang">Pahang</option>
+              <option value="Penang">Penang</option>
+              <option value="Perak">Perak</option>
+              <option value="Perlis">Perlis</option>
+              <option value="Sabah">Sabah</option>
+              <option value="Sarawak">Sarawak</option>
+              <option value="Selangor">Selangor</option>
+              <option value="Terengganu">Terengganu</option>
+            </select>
+            <label for="subject">Your Question</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+
+            <div class="subbutton">
+            <input type="submit"value="Submit">
+            </div>
+        </form>
+
+         
+        </div>
+      </div>
+    </div>
+    <script>
+        function submitInform(){
+            alert("Form is submitted");
+            return true;
+        }
+    </script>
+      
+</main>
+
+
+
+
+    </main>
+        <!--Chatbot-->
+    <div class="chatbot">
+        <!-- Header Button -->
+        <button id="chat-btn" class="chat-header">
+            <img src="image/icon-chat.png" alt="chat icon" height="20" />
+            <b>Chatbot</b>
+        </button>
+
+        <!-- Chatbox Body -->
+        <div class="chat-hide">
+            <div class="relative-container">
+                <div class="absolute-container">
+                    <!-- initial messages -->
+                    <div class="chatbox">
+                        <p id="chat-time"><!-- time --></p>
+                        <p id="botStartMsg" class="botText"><!-- initial messages --></p>
+                    </div>
+
+                    <!-- input section -->
+                    <div class="chat-input">
+                        <div class="chat-input-inner">
+                            <!-- input box -->
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="inputBox" placeholder="Enter your message here..." />
+                                <p></p>
+                            </div>
+
+                            <!-- send button -->
+                            <div class="chat-send">
+                                <img src="image/icon-send.png" alt="send icon" height="20" onclick="sendBtn(event)" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- display chatbot replies -->
+                    <div id="chatBar-btm"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr />
+        <div class="footer-container">
+            <div>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about_us.html">About Sephora</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="tnc.html">Terms and Condition</a></li>
+                    <li><a href="retailstore.html">Retails Stores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="fragrance.html">Fragrance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="product_delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="center app">
+                <h4>GET THE APP</h4>
+                <a href="https://app.appsflyer.com/id1152899196?pid=Onsite&amp;c=SG_Header_iOS" target="_blank">
+                    <img src="image/app-appstore.png" alt="App Store link" width="150" /></a><br />
+                <a href="https://app.appsflyer.com/com.sephora.digital?pid=Onsite&amp;c=SG_Header_Android" target="_blank">
+                    <img src="image/app-googleplay.png" alt="Google Play link" width="150" /></a>
+            </div>
+
+            <div class="center social">
+                <h4>SOCIAL MEDIA</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sephoramalaysia/" target="_blank"><img src="image/icon-fb.png" alt="facebook" width="20" /></a></li>
+                    <li><a href="https://twitter.com/sephora_msia" target="_blank"><img src="image/icon-twitter.png" alt="twitter" width="20" /></a></li>
+                    <li><a href="https://www.instagram.com/sephoramy/" target="_blank"><img src="image/icon-ig.png" alt="instagram" width="20" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br />
+        <p>Copyright © 2021 Sephora Malaysia</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <script src="livechat.js"></script>
+    <script src="responses.js"></script>
+</body>
+</html>
